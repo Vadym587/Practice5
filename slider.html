@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>3 Column Layout</title>
+    <link rel="stylesheet" href="asserts/css/layout.css">
+    <link rel="stylesheet" href="asserts/css/style.css">
+    <script src="asserts/js/script.js"></script>
+</head>
+<body>
+<header class="header">
+    <a href="index.html" class="logo">
+        <img src="asserts/img/logo.png" width="7%">
+    </a>
+    <span>Header...</span>
+</header>
+<div class="container">
+    <main class="center column">
+        <article>
+            <h1>Slider</h1>
+            <div class="slider">
+            <div class="slider__wrapper">
+              <div class="slider__items">
+                <div class="slider__item">
+                  <div style="height: 300px; background: orange;"><img src="public/images/17391.jpg" width="100%"></div>
+                </div>
+                <div class="slider__item">
+                  <div style="height: 300px; background: green;"><img src="public/images/16848.jpg" width="100%"></div>
+                </div>
+                <div class="slider__item">
+                  <div style="height: 300px; background: violet;"><img src="public/images/18036.jpg" width="100%"></div>
+                </div>
+                <div class="slider__item">
+                  <div style="height: 300px; background: coral;"><img src="public/images/8433.jpg" width="100%"></div>
+                </div>
+              </div>
+            </div>
+            <a class="slider__control slider__control_prev" href="#" role="button"></a>
+            <a class="slider__control slider__control_next slider__control_show" href="#" role="button"></a>
+          </div>
+
+          <script>
+            slideShow('.slider', {
+              isAutoplay: true
+            });
+          </script>  
+        </article>
+    </main>
+    <nav class="left column">
+        <h3>Main pages</h3>
+        <ul>
+            <li><a href="index.html">Header</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <h3>Other pages</h3>
+        <ul>
+            <li><a href="slider.html">Slider</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="table.html">Table</a></li>
+        </ul>
+    </nav>
+    <div class="right column">
+        <h3>Right heading</h3>
+        <p></p>
+    </div>
+</div>
+<div class="footer-wrapper">
+    <footer class="footer">
+        <a href="index.html" class="logo">
+            <img src="asserts/img/logo.png" width="7%">
+        </a>
+        <span>Footer...</span>
+    </footer>
+</div>
+</body>
+</html>
